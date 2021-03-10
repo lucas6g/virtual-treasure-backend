@@ -1,0 +1,22 @@
+{
+  "name":"default",
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5433,
+  "username": "postgres",
+  "password": "docker",
+  "database": "virtual_treasure",
+
+  "migrations":[
+    "./src/shared/infra/database/migrations/*.ts"
+
+  ],
+
+  "entities":[
+    "./src/modules/**/infra/typeorm/entities/*.ts"
+  ],
+
+  "cli":{
+    "migrationsDir":"./src/shared/infra/database/migrations"
+  }
+}
