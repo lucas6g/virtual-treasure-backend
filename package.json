@@ -24,8 +24,9 @@
   "scripts": {
     "test": "jest",
     "build": "tsc",
-    "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "start": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "orm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    
     
   },
   "dependencies": {

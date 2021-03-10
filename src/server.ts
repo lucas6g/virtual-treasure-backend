@@ -1,6 +1,8 @@
 
-import express from 'express'
+import app from './app'
+import './shared/infra/database'
+// separar o app do servidor para no teste nao ter que subir o servidor
 
-const app = express()
-
-export default app
+app.listen(3333, () => {
+  console.log('Server starter on port 3333')
+})
